@@ -1,0 +1,21 @@
+.todos {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.add-todo {
+  margin: 8px;
+  gap: 8px;
+  .input {
+    padding: 8px;
+  }
+}
+
+.app-todo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

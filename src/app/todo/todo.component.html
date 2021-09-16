@@ -1,0 +1,18 @@
+<h1>Todo app!!</h1>
+
+<div class="app-todo">
+  <div class="add-todo">
+    <mat-form-field appearance="fill">
+      <mat-label>Todo text</mat-label>
+      <input (keydown.enter)="addTodo()" matInput [(ngModel)]="todoInput">
+    </mat-form-field>
+    <button mat-raised-button color="primary" class="button" (click)="addTodo()">Add</button>
+  </div>
+
+  <div class="todos">
+    <div *ngFor="let todo of todos">
+      <todo-item (onDelete)="deleteTodo(todo.id)" (onCheck)="checkTodo(todo.id, !todo.check)" [Checked]="todo.check" [Id]="todo.id" [Text]="todo.text"></todo-item>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,8 @@
+<mat-card class="card {{Checked && 'checked' }}">
+  {{ Text }}
+  <div>
+    <button color="primary" mat-mini-fab (click)="delete()"><mat-icon>delete</mat-icon></button>
+    <button color="{{Checked ? 'error' : 'success' }}" mat-mini-fab (click)="check()"><mat-icon>{{ Checked ? "close" : "done" }}</mat-icon></button>
+  </div>
+</mat-card>
+

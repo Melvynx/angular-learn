@@ -1,0 +1,13 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px;
+  align-items: center;
+  padding: 8px;
+  min-width: 256px;
+  max-width: 350px;
+
+  &.checked {
+    background-color: #00000050;
+  }
+}
